@@ -1,26 +1,27 @@
-/* Navbar.css */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
-  background: linear-gradient(to right, #c49bdd, #f7c1d6);
   border-radius: 0 0 10px 10px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 1emrem;
   z-index: 10;
+ background: linear-gradient(to right, #c49bdd, #f7c1d6);
 }
 
 .logo {
   display: flex;
   align-items: center;
+  margin-top: 9em;
+  width: 100px;
+  height: 100px;
 }
 
 .logo img {
-  height: 50px;
+  height: 200px;
 }
 
 .navbar h1 {
@@ -52,6 +53,7 @@
 .nav-links a:hover {
   color: #f0f0f0;
 }
+
 
 /* Ajustes para pantallas grandes (desktop) */
 @media (min-width: 1024px) {

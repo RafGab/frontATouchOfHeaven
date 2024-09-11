@@ -12,19 +12,6 @@ const Navbar = () => {
         <div>
           <h1 className="title">Más cerca de los que queremos¡</h1>
         </div>
-        <div>
-          <ul className="nav-links">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/upload">Subir Recuerdo</Link>
-            </li>
-            <li>
-              <Link to="/recuerdos">Ver Recuerdos</Link>
-            </li>
-          </ul>
-        </div>
       </div>
     </nav>
   );
