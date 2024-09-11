@@ -1,13 +1,43 @@
-// src/index.jsx
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import './index.css';  // Aquí puedes incluir tus estilos globales
-import { RouterProvider } from 'react-router-dom';
-import router from './router/index.jsx'; // Rutas que crearemos en el siguiente paso
+// src/router/index.jsx
+import { createBrowserRouter } from 'react-router-dom';
+import RecuerdosList from '../components/listaRecuerdo/RecuerdosList';
+import UploadRecuerdo from '../components/subirRecuerdo/UploadRecuerdo';
+import DeleteRecuerdo from '../components/borrarRecuerdo/DeleteRecuerdo';
+import Navbar from '../components/navbar/Navbar'; // Si quieres mostrar siempre el Navbar
 import React from 'react';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
-);
+
+// Definimos las rutas
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <>
+        <Navbar />
+        <RecuerdosList />
+      </>
+    ),
+  },
+  {
+    path: "/upload",
+    element: (
+      <>
+        <Navbar />
+        <UploadRecuerdo />
+      </>
+    ),
+  },
+  {
+    path: "/delete",
+    element: (
+      <>
+        <Navbar />
+        <DeleteRecuerdo />
+      </>
+    ),
+  },
+]);
+
+export default router;
+
+
