@@ -1,6 +1,6 @@
 import logo from '../../assets/logo/logo.png'; 
 
-const LogoPink = ({ src = logo, alt = 'A Touch of Heaven' }) => {
+const LogoPink = ({ src = logo, alt ="" }) => {
   return (
     <div>
       <img  

@@ -1,0 +1,64 @@
+.initial-view-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff8ab5, #b28cff, #8aaaff);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    margin: auto;
+  }
+
+  
+  section {
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: #f793d4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .recuerdos-section,
+  .upload-section,
+  .delete-section {
+    width: 80%;
+  }
+  
+  button {
+    background-color: #ff8ab5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    background-color: #b28cff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .initial-view-container {
+      padding: 15px;
+    }
+  
+    .recuerdos-section,
+    .upload-section,
+    .delete-section {
+      width: 100%;
+    }
+  }
+  
