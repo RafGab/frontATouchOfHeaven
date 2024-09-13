@@ -1,5 +1,6 @@
 import LogoPink from "../logo/LogoPink";
 import "./navbar.css";
+import React from "react";
 
 const Navbar = () => {
   return (
