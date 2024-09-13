@@ -11,23 +11,22 @@ const UploadRecuerdo = () => {
   const [link, setLink] = useState('');
   const [error, setError] = useState('');
 
-  // Manejadores de cambio para los campos de texto
   const handleTituloChange = (e) => setTitulo(e.target.value);
   const handleDescripcionChange = (e) => setDescripcion(e.target.value);
   const handleLinkChange = (e) => setLink(e.target.value);
 
-  // Manejador genérico para los archivos
+
   const handleFileChange = (e) => {
     const { name, files: uploadedFiles } = e.target;
     setFiles({ ...files, [name]: uploadedFiles[0] });
   };
 
-  // Subir el recuerdo
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(''); // Resetea errores previos
+    setError(''); 
 
-    // Validación adicional: Al menos un archivo o un enlace deben estar presentes
+    
     if (!files.photo && !files.video && !files.document && !link) {
       setError('Debes proporcionar al menos un archivo o un enlace.');
       return;
@@ -47,7 +46,7 @@ const UploadRecuerdo = () => {
       });
       alert('Recuerdo subido con éxito');
       
-      // Resetea el formulario después del éxito
+      
       setTitulo('');
       setDescripcion('');
       setFiles({ photo: null, video: null, document: null });

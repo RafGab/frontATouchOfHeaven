@@ -1,4 +1,5 @@
 import logo from '../../assets/logo/logo.png'; 
+import React from 'react';
 
 const LogoPink = ({ src = logo, alt ="" }) => {
   return (
